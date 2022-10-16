@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+  <style>
+    /* set background image to tile */
+    body {
+      background-image: url("tile.png");
+      background-repeat: repeat;
+      font-family: 'Montserrat', sans-serif;
+    }
+    /* vignette div */
+    .vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.45));
+    }
+    /* center text */
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 0.75;
+      font-size: 20vmin;
+    }
+    /* bottom text */
+    .bottom{
+      position: absolute;
+      bottom: 5vh;
+      left: 50%;
+      transform: translate(-50%, 0);
+      text-align: center;
+      line-height: 0.85;
+      font-size: 10vmin;
+      width: 100%;
+    }
+    .bottom div {
+      margin-bottom: 1vh;
+    }
+    /* make screen clickable */
+    .clickable {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <a class="clickable" href="https://aarondotwork.8thwall.app/aaa-project-cloud"></a>
+  <div class="vignette"></div>
+  <div class="center">fashion forevAR</div>
+  <div class="bottom">
+    <div style="font-size: 5vmin;">every minute at the zerospace subway car. forever.</div>
+    <div>tap anywhere to continue</div>
+  </div>
+</body>
+</html>
